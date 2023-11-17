@@ -5,7 +5,7 @@ import { api } from "~/trpc/server";
 import { Slider } from "~/components/ui/slider";
 
 export default async function Home() {
-  const hello = await api.post.hello.query({ text: "from tRPC" });
+  // const hello = await api.post.hello.query({ text: "from tRPC" });
   const session = await getServerAuthSession();
 
   return (
